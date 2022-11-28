@@ -1,7 +1,7 @@
 import Msg from "./Msg";
 import Menu from "./Menu";
 
-const Meals = () => {
+const Meals = (props) => {
 
     return (
     <section>
