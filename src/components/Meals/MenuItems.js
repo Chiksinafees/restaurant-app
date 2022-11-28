@@ -1,7 +1,8 @@
 import classes from "./MenuItems.module.css";
+import MealForm from "./MealForm";
 
 const MenuItems = (props) => {
-  console.log(props);
+  //console.log(props);
   return (
     <li className={classes.meal}>
       <div>
@@ -9,6 +10,7 @@ const MenuItems = (props) => {
         <div className={classes.description}>{props.description}</div>
         <div className={classes.price}> ${props.price}</div>
       </div>
+      <MealForm />
     </li>
   );
 };
