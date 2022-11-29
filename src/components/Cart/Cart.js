@@ -2,8 +2,8 @@ import classes from "./Cart.module.css";
 import Modal from "../UI/Modal";
 
 const Cart = (props) => {
-    
-  const CardHandler = (
+  
+  const CartHandler = (
     <ul className={classes["cart-items"]}>
       {[{ id: "m1", name: "Sushi", Amount: 2, Price: 35.62 }].map((food) => (
         <li key={food.id}>{food.name}</li>
@@ -13,7 +13,7 @@ const Cart = (props) => {
 
   return (
     <Modal onCartHidden={props.onCartHidden}>
-      {CardHandler}
+      {CartHandler}
       <div className={classes.total}>
         <span>Total Amount</span>
         <span>$35.62</span>
