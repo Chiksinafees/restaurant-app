@@ -3,10 +3,9 @@ import React, { useContext } from "react";
 import CartContext from "../store/Cart-context";
 
 const MealForm = (props) => {
-
   const cartCtx = useContext(CartContext);
 
-  const itemAdded = (e) => {
+  const itemAddedToCart = (e) => {
     e.preventDefault();
 
     const quantity = document.getElementById("Amount_" + props.id).value;
@@ -25,7 +24,7 @@ const MealForm = (props) => {
         defaultValue="0"
       />
       <br />
-      <button onClick={itemAdded}>+Add</button>
+      <button onClick={itemAddedToCart}>+Add</button>
     </form>
   );
 };

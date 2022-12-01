@@ -2,7 +2,6 @@ import classes from "./MenuItems.module.css";
 import MealForm from "./MealForm";
 
 const MenuItems = (props) => {
-  // console.log(props);
   return (
     <li className={classes.meal} key={props.id}>
       <div>
